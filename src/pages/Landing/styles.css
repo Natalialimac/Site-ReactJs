@@ -1,0 +1,104 @@
+#page-landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cee9e8;
+    background: #0EA8B9;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.logo-container img {
+    height: 30rem;
+}
+
+.logo-container h2 {
+    text-align: center;
+    font-size: 3.6rem;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin: 3.5rem 0;
+}
+
+.buttons-container a {
+    width: 25rem;
+    height: 10rem;
+    border-radius: 8rem;
+    font: 700 2.0rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-button-text);
+    transition: backgroud-color 0.2s;
+}
+
+
+/* distanciamento dos botões */
+
+.buttons-container a:first-child {
+    margin-right: 1.6rem;
+}
+
+.buttons-container a.servicos {
+    background: #F23322;
+}
+
+.buttons-container a.enviar {
+    background: var(--color-secundary);
+}
+
+.buttons-container a.servicos:hover {
+    background: #f33933d0;
+}
+
+.buttons-container a.enviar:hover {
+    background: var(--color-secundary-dark);
+}
+
+
+/* desktop */
+
+@media(min-width: 1100px) {
+    #pages-landing-content {
+        max-width: 1100px;
+        /* determina onde cada elemento vai se posicionar */
+        display: grid;
+        grid-template-rows: 300px 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas: "logo hero hero" "buttons buttons total";
+    }
+    .logo-container {
+        grid-area: logo;
+        align-self: center;
+        text-align: left;
+        margin: 0;
+    }
+    .logo-container h2 {
+        text-align: initial;
+        font-size: 3.6rem;
+    }
+    .logo-container img {
+        height: 30rem;
+    }
+    .hero-image {
+        grid-area: hero;
+        justify-self: end;
+    }
+    .buttons-container {
+        grid-area: buttons;
+        position: relative;
+        left: 30rem;
+    }
+    .buttons-container a {
+        font-size: 2.4rem;
+    }
+}
