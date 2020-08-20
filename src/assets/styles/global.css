@@ -34,6 +34,8 @@ body,
 
 body {
     background: var(--color-background);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #root {

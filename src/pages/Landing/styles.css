@@ -4,28 +4,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #cee9e8;
+    color: #ffffffe1;
     background: #0EA8B9;
 }
 
 .logo-container {
     text-align: center;
+    position: relative;
     margin-bottom: 3.2rem;
+    top: 10rem;
 }
 
 .logo-container img {
     height: 30rem;
 }
 
+.logo-container h1 {
+    position: relative;
+    font: 400 2.0rem Raleway;
+    top: -25rem;
+    font-size: 6rem;
+    display: block;
+}
+
 .logo-container h2 {
+    display: block;
     text-align: center;
-    font-size: 3.6rem;
+    font: 400 2.0rem Raleway;
+    position: relative;
+    top: -26rem;
+    font-size: 8rem;
+    color: rgb(78, 77, 77);
 }
 
 .buttons-container {
     display: flex;
     justify-content: center;
     margin: 3.5rem 0;
+    position: relative;
+    top: -5rem;
 }
 
 .buttons-container a {
@@ -82,12 +99,20 @@
         text-align: left;
         margin: 0;
     }
+    .logo-container h1 {
+        text-align: center;
+        font-size: 7rem;
+        right: 2.5rem;
+        top: -28rem;
+    }
     .logo-container h2 {
-        text-align: initial;
-        font-size: 3.6rem;
+        text-align: center;
+        font-size: 8rem;
+        right: 2rem;
+        top: -29rem;
     }
     .logo-container img {
-        height: 30rem;
+        height: 35rem;
     }
     .hero-image {
         grid-area: hero;
@@ -97,6 +122,7 @@
         grid-area: buttons;
         position: relative;
         left: 30rem;
+        top: 2rem;
     }
     .buttons-container a {
         font-size: 2.4rem;
