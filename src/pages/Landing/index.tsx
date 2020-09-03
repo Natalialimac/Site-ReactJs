@@ -20,13 +20,13 @@ function Landing(){
                     <Link to="/servicos" className="servicos">
                         Serviços
                     </Link>
-                    <Link to="/enviarEmail" className="enviar"> 
+                    <Link to="/enviar" className="enviar"> 
                         Enviar
                     </Link>
                 </div>
            </div>
        </div>
     )
-};
+}
 
 export default Landing;

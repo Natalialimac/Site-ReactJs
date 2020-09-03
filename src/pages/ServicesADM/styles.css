@@ -1,0 +1,91 @@
+#page-services-list {
+    width: 100vw;
+    height: 100vh;
+}
+
+#containers {
+    margin-top: 3.2rem;
+}
+
+#containers label {
+    color: var(--color-text-in-primary);
+}
+
+#containers .link-block {
+    position: relative;
+    background-color: aliceblue;
+    border-radius: 11px;
+    text-align: center;
+}
+
+#containers .link-block+.link-block {
+    margin-top: 1.4rem;
+}
+
+#containers .link-block a,
+a {
+    text-decoration: none;
+}
+
+#containers .link-block label {
+    font-size: 1.4rem;
+}
+
+#containers .link-block Link {
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.4rem;
+    border-radius: 0.8rem;
+    background: var(--color-input-background);
+    border: 1px solid var(--color-line-in-white);
+    outline: 0;
+    padding: 0 1.6rem;
+    font: 1.6rem Archivo;
+}
+
+
+/* estilizar o input quando tá com focus 
+#search-teacher .link-block input:focus {} */
+
+
+/* estilizar o input block quando o input tiver com focus */
+
+#containers .link-block:focus-within::after {
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    content: '';
+    background: var(--color-primary-light);
+    position: absolute;
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom: 0;
+}
+
+#page-services-list main {
+    margin: 3.2rem auto;
+    width: 90%;
+}
+
+
+/* desktop */
+
+@media(min-width: 700px) {
+    #page-services-list {
+        max-width: 100%;
+    }
+    #containers {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 16px;
+        position: absolute;
+        bottom: -28px;
+    }
+    #containers .link-block+.link-block {
+        margin-top: 0;
+    }
+    #page-services-list main {
+        padding: 3.2rem 0;
+        max-width: 740px;
+        margin: 0 auto;
+    }
+}
